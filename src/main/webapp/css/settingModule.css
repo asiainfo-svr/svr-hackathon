@@ -1,0 +1,556 @@
+a,
+address,
+b,
+big,
+blockquote,
+body,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+ol,
+p,
+pre,
+small,
+span,
+strong,
+u,
+ul,
+var {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	min-width: 1024px;
+	color: #fff;
+	background-color: #f6f6f6;
+	font: 14px "Microsoft Yahei";
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+li {
+	list-style: none;
+}
+
+input,
+button {
+	outline: none;
+	border: none;
+}
+
+img{
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+.clearfix {
+	*+height: 1%;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/*结构化样式*/
+.col-w-1, .col-w-2, .col-w-3, .col-w-4, .col-w-5, .col-w-6, .col-w-7, .col-w-8, .col-w-9, .col-w-10, .col-w-11, .col-w-12,.col-w-13, .col-w-14, .col-w-15, .col-w-16, .col-w-17, .col-w-18, .col-w-19, .col-w-20, .col-w-21, .col-w-22, .col-w-23, .col-w-24 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+.col-w-1 {
+    width: 4.16666667%;
+}
+.col-w-2 {
+    width: 8.33333334%;
+}
+.col-w-3 {
+    width: 12.5%;
+}
+.col-w-4 {
+    width: 16.66666667%;
+}
+.col-w-5 {
+    width: 20.83333333%;
+}
+.col-w-6 {
+    width: 25%;
+}
+.col-w-7 {
+    width: 29.16666667%;
+}
+.col-w-8 {
+    width: 33.33333333%;
+}
+.col-w-9 {
+    width: 37.5%;
+}
+.col-w-10 {
+    width: 41.66666667%;
+}
+.col-w-11 {
+    width: 45.833%;
+}
+.col-w-12 {
+    width: 50%;
+}
+.col-w-13 {
+    width: 54.16666667%;
+}
+.col-w-14 {
+    width: 58.33333333%;
+}
+.col-w-15 {
+    width: 62.5%;
+}
+.col-w-16 {
+    width: 66.66666667%;
+}
+.col-w-17 {
+    width: 70.33333333%;
+}
+.col-w-18 {
+    width: 75%;
+}
+.col-w-19 {
+    width: 79.16666667%;
+}
+.col-w-20 {
+    width: 83.33333333%;
+}
+.col-w-21 {
+    width: 87.5%;
+}
+.col-w-22 {
+    width: 91.66666667%;
+}
+.col-w-23 {
+    width: 95.83333333%;
+}
+.col-w-24 {
+    width: 100%;
+}
+.col-h-1 {
+    height: 4.16666667%;
+}
+.col-h-2 {
+    height: 8.33333334%;
+}
+.col-h-3 {
+    height: 12.5%;
+}
+.col-h-4 {
+    height: 16.66666667%;
+}
+.col-h-5 {
+    height: 20.83333333%;
+}
+.col-h-6 {
+    height: 25%;
+}
+.col-h-7 {
+    height: 29.16666667%;
+}
+.col-h-8 {
+    height: 33.33333333%;
+}
+.col-h-9 {
+    height: 37.5%;
+}
+.col-h-10 {
+    height: 41.66666667%;
+}
+.col-h-11 {
+    height: 45.833%;
+}
+.col-h-12 {
+    height: 50%;
+}
+.col-h-13 {
+    height: 54.16666667%;
+}
+.col-h-14 {
+    height: 58.33333333%;
+}
+.col-h-15 {
+    height: 62.5%;
+}
+.col-h-16 {
+    height: 66.66666667%;
+}
+.col-h-17 {
+    height: 70.33333333%;
+}
+.col-h-18 {
+    height: 75%;
+}
+.col-h-19 {
+    height: 79.16666667%;
+}
+.col-h-20 {
+    height: 83.33333333%;
+}
+.col-h-21 {
+    height: 87.5%;
+}
+.col-h-22 {
+    height: 91.66666667%;
+}
+.col-h-23 {
+    height: 95.83333333%;
+}
+.col-h-24 {
+    height: 100%;
+}
+
+/**/
+
+.par-drop{
+	display: none;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: auto;
+	top: 41px;
+	border: 1px solid #0561A6;
+	background-color: #050B1E;
+	z-index: 10;
+	color: #fff;
+}
+.par-drop ul{
+	width: 100%;
+	height: 100%;
+}
+.par-li{
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	cursor: pointer;
+}
+.par-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 6px 0 107px;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+.par-bg-left{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 107px;
+	height: 100%;
+	background-image: url(../img/par-clock-left.png);
+}
+.par-bg-center{
+	width: 100%;
+	height:100%;
+	background: url(../img/par-clock-repeat.png) repeat;
+}
+.par-bg-right{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 6px;
+	height: 100%;
+	background-image: url(../img/par-clock-right.png);
+}
+.nav-home .par-bg,
+.nav-ul .par-bg{
+	padding: 0 2px;
+}
+.nav-home .par-hover{
+	padding: 0 1px 0 55px;
+}
+.par-nav .par-bg-left{
+	width: 2px;
+	background-image: url(../img/par-select-left.png);
+}
+.par-nav .par-bg-center{
+	background: url(../img/par-select-center.png) repeat;
+}
+.par-nav .par-bg-right{
+	width: 2px;
+	background-image: url(../img/par-select-left.png);
+}
+.par-b-shade{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+  background-image: linear-gradient(to right,#156D7D,#18799A,#156D7D);
+}
+.par-hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 1px 0 117px;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+}
+.par-hover .par-bg-left{
+	width: 117px;
+	background-image: url(../img/par-hover-left.png);
+}
+.par-hover .par-bg-center{
+	background: url(../img/par-hover-center.png) repeat;
+}
+.par-hover .par-bg-right{
+	width: 1px;
+	background-image: url(../img/par-hover-left.png);
+	z-index: 1;
+}
+.par-li .par-b-shade{
+	height: 1px;
+	background-image: linear-gradient(to right,#072B54,#0090F6,#072B54);
+}
+
+/*导航*/
+.par-nav{
+	position: relative;
+	padding: 0 20px 2px;
+	width: 100%;
+	min-width: 1165px;
+	height: 42px;
+	background-image: linear-gradient(to right,#052648,#0A3464,#0B376F,#06294E);
+}
+.nav-box{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0 110px;
+}
+.nav-home{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 30px;
+	width: 110px;
+	height: 100%;
+	display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+	justify-content: center;
+}
+.nav-ul{
+	width: 100%;
+	height: 100%;
+}
+.nav-btn{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100px;
+	height: 100%;
+}
+.par-item{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+	justify-content: center;
+	z-index: 1;
+}
+.nav-ul li{
+	float: left;
+	position: relative;
+	min-width: 150px;
+	height: 100%;
+	cursor: pointer;
+}
+.par-drop .par-li:hover{
+	color: #0096ff;
+}
+.nav-ul .par-item{
+	padding: 0 15px;
+}
+.par-drop .par-li{
+	position: relative;
+	padding-bottom: 1px;
+	font-size: 12px;
+	z-index: 1;
+}
+.drop-div{
+	width: 100%;
+	height: 100%;
+}
+
+/*banner*/
+.par-banner{
+	padding: 17px 0;
+	height: 84px;
+	min-width: 1165px;
+	background-image: linear-gradient(to right,#06152D,#071A35,#092044,#081A33);
+}
+.banner-box-left{
+	float: left;
+	width: 60%;
+	height: 100%;	
+}
+.banner-box-right{
+	float: left;
+	width: 40%;
+	height: 100%;
+}
+.par-div{
+	float: left;
+}
+.banner-box-left >.par-div{
+  padding: 7px 25px;
+}
+.login-wrap .par-img{
+	width: 100%;
+}
+.par-banner .par-img{
+	display: block;
+	height: 100%;
+}
+.banner-box-left .bar{
+  border-right: 1px solid #a9c2d5;	
+}
+.banner-box-right >.par-div{
+	float: right;
+	height: 100%;
+	color: #fff;
+}
+.par-clock{
+	position: relative;
+	width: 140px;
+	height: 100%;
+}
+.par-clock .par-item{
+	height: initial;
+}
+.par-clock >.detailTime{
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+}
+.par-clock >.detailDay{
+	font-size: 12px;
+}
+
+/*个性化样式*/
+.par-nav .par-item-i{
+	margin-top: -20px;
+}
+.par-div-img{
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+}
+.par-img-text{
+	position: relative;
+	padding-left: 45px;
+	width: 150px;
+	height: 100%;
+	cursor: pointer;
+}
+.banner-box-right >.par-div{
+	margin: 0 35px;
+	position: relative;
+}
+.par-div-text{
+	height: 50px;
+	line-height: 50px;
+}
+.par-div-text i{
+	font-size: 12px;
+}
+/*dyh end*/
+
+.bg-opacity{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #07091E;
+  opacity: .5;
+}
+.item-home .par-hover{
+	padding: 0 1px 0 0;
+	overflow: hidden;
+}
+.item-home .par-hover-left{
+	min-width: 50px;
+}
+.grad-nav .btn-lg{
+	min-width: 150px;
+	line-height: 35px;
+}
+.nav-home .grad-nav .btn{
+	padding: 0;
+	min-width: 50px;
+}
+.nav-home >.grad-nav:hover{
+	background-image: url(../img/home-hover.png);
+}
+.nav-home >.grad-nav:hover >.bg{
+	display: none;
+}

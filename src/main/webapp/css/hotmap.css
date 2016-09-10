@@ -1,0 +1,141 @@
+body{
+	background: #03060F;
+	min-width: 1024px;
+}
+.hotmap,.hotmap1{
+	width: 1280px;
+	height: 800px;
+	background: url(../img/hotmap2.jpg) no-repeat;
+	position: relative;
+}
+.hotmap{
+	background: url(../img/011.jpg) no-repeat;
+}
+.hotmap .area{
+	width: 125px;
+	height: 69px;
+	line-height: 57px;
+	position: absolute;
+	background: url(../img/area1.png) no-repeat;
+	text-align: center;
+	color: #FFF;
+	font-size: 15px;
+	cursor: pointer;
+	z-index: 10;
+}
+.hotmap .area:hover{
+	background: url(../img/area2.png) no-repeat;
+}
+.area>img{
+	width: 100%;
+	height: 100%;
+}
+.area1{
+	top: 460px;
+	left: 790px;
+}
+.area2{
+    top: 365px;
+    left: 700px;	
+}
+.area3{
+    top: 300px;
+    left: 800px;	
+}
+.area4{
+    top: 332px;
+    left: 923px;	
+}
+.hotmap1 .area{
+	position: absolute;
+	z-index: 10;
+	cursor: pointer;
+}
+.hotmap1 .area1{
+	top: 440px;
+    left: 750px;
+}
+.hotmap1 .area2{
+    top: 290px;
+    left: 630px;
+}
+.hotmap1 .area3{
+    top: 190px;
+    left: 780px;
+}
+.hotmap1 .area4{
+    top: 365px;
+    left: 920px;
+}
+.hotmap1 .area p{
+	text-align: center;
+	color: #FFF;
+	margin-bottom: 10px;
+}
+.alert_parent{
+	width: 559px;
+	height: 217px;
+	position: absolute;
+	display: none;
+}
+.map_alert{
+	position: absolute;
+	width: 559px;
+	height: 217px;
+	background: url(../img/alert.png) no-repeat;
+	font-size: 15px;
+	color: #FFF;
+	display: none;
+	z-index: 9;
+}
+.map_alert1{
+	width: 328px;
+	height: 217px;
+	z-index: 11;
+	top: 3px;
+	left: 0;
+	background: url(../img/alert1.png) no-repeat;
+	background-size: 100%;
+}
+.map_alert2{
+	width: 247px;
+	height: 217px;
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 328px;
+	background: url(../img/alert2.png) no-repeat;
+	background-size: 100%;
+}
+.map_alert div{
+	width: 265px;
+	margin: 20px 0 0 30px;
+	line-height: 30px;
+    text-indent: 10px;
+}
+.map_alert div:nth-child(1){
+    margin-top: 5px;
+	border-bottom: 1px solid #F6F6F6;
+	font-size: 17px;
+	line-height: 55px;
+}
+.alert_text li{
+	width: 100%;
+}
+.alert_text p{
+	width: 50%;
+	display: inline-block;
+}
+.alert_left{
+	float: left;
+	padding-left: 5px;
+}
+.alert_right{
+	float: right;
+	text-align: right;
+	font-size: 18px;
+	padding-right: 15px;
+}
+.money{
+	font-size: 16px;
+}

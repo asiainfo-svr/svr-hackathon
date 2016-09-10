@@ -1,0 +1,253 @@
+body {
+	color: #FFF;
+      background-image: linear-gradient(to right,#06152D,#071A35,#092044,#081A33);
+}
+a {
+	text-decoration: none;
+	color:#fff;
+}
+.config {
+	width: 2880px;
+	height: 1080px;
+  padding: 7.5px;
+  outline: 1px dashed #b1b5b7;
+  color: #F3F3F3;
+}
+.gray-bg{
+	background-color: #1D1D3E;
+}
+.box-boss{
+  position: relative;
+	height: 100%;
+}
+.col-w-1, .col-w-2, .col-w-3, .col-w-4, .col-w-5, .col-w-6, .col-w-7, .col-w-8, .col-w-9, .col-w-10, .col-w-11, .col-w-12,.col-w-13, .col-w-14, .col-w-15, .col-w-16, .col-w-17, .col-w-18, .col-w-19, .col-w-20, .col-w-21, .col-w-22, .col-w-23, .col-w-24 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+.col-w-1 {
+    width: 4.16666667%;
+}
+.col-w-2 {
+    width: 8.33333334%;
+}
+.col-w-3 {
+    width: 12.5%;
+}
+.col-w-4 {
+    width: 16.66666667%;
+}
+.col-w-5 {
+    width: 20.83333333%;
+}
+.col-w-6 {
+    width: 25%;
+}
+.col-w-7 {
+    width: 29.16666667%;
+}
+.col-w-8 {
+    width: 33.33333333%;
+}
+.col-w-9 {
+    width: 37.5%;
+}
+.col-w-10 {
+    width: 41.66666667%;
+}
+.col-w-11 {
+    width: 45.833%;
+}
+.col-w-12 {
+    width: 50%;
+}
+.col-w-13 {
+    width: 54.16666667%;
+}
+.col-w-14 {
+    width: 58.33333333%;
+}
+.col-w-15 {
+    width: 62.5%;
+}
+.col-w-16 {
+    width: 66.66666667%;
+}
+.col-w-17 {
+    width: 70.33333333%;
+}
+.col-w-18 {
+    width: 75%;
+}
+.col-w-19 {
+    width: 79.16666667%;
+}
+.col-w-20 {
+    width: 83.33333333%;
+}
+.col-w-21 {
+    width: 87.5%;
+}
+.col-w-22 {
+    width: 91.66666667%;
+}
+.col-w-23 {
+    width: 95.83333333%;
+}
+.col-w-24 {
+    width: 100%;
+}
+.col-h-1 {
+    height: 4.16666667%;
+}
+.col-h-2 {
+    height: 8.33333334%;
+}
+.col-h-3 {
+    height: 12.5%;
+}
+.col-h-4 {
+    height: 16.66666667%;
+}
+.col-h-5 {
+    height: 20.83333333%;
+}
+.col-h-6 {
+    height: 25%;
+}
+.col-h-7 {
+    height: 29.16666667%;
+}
+.col-h-8 {
+    height: 33.33333333%;
+}
+.col-h-9 {
+    height: 37.5%;
+}
+.col-h-10 {
+    height: 41.66666667%;
+}
+.col-h-11 {
+    height: 45.833%;
+}
+.col-h-12 {
+    height: 50%;
+}
+.col-h-13 {
+    height: 54.16666667%;
+}
+.col-h-14 {
+    height: 58.33333333%;
+}
+.col-h-15 {
+    height: 62.5%;
+}
+.col-h-16 {
+    height: 66.66666667%;
+}
+.col-h-17 {
+    height: 70.33333333%;
+}
+.col-h-18 {
+    height: 75%;
+}
+.col-h-19 {
+    height: 79.16666667%;
+}
+.col-h-20 {
+    height: 83.33333333%;
+}
+.col-h-21 {
+    height: 87.5%;
+}
+.col-h-22 {
+    height: 91.66666667%;
+}
+.col-h-23 {
+    height: 95.83333333%;
+}
+.col-h-24 {
+    height: 100%;
+}
+.ibox-all{
+ 	/*padding-bottom: 15px; */
+  padding: 7.5px;
+}
+.ibox{
+	clear: both;
+	position: relative;
+	margin-top: 0;
+	width: 100%;
+	height: 100%;
+	border: 1px dashed #b1b5b7;
+}
+.ibox-title{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #29297F;
+	border-color: #35AEFF;
+	border-style: solid solid none;
+	border-width: 4px 0 0;
+	color: inherit;
+	height: 48px;
+	line-height: 44px;
+	padding-left: 15px;
+  z-index: 1;
+}
+.ibox-content{
+    position: relative;
+    z-index: 1;
+	width: 100%;
+	height: 100%;
+	color: inherit;
+	/*padding: 15px;*/
+  padding: 7.5px;
+}
+.ibox-hastit{
+	padding-top: 48px;
+}
+
+.topper{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  min-width: 1024px;
+  background-color: #393847;
+  z-index: 9;
+}
+.contenter{
+  width: 100%;
+  min-width: 1024px;
+  height: 100%;
+  color: #525c60;
+  position: relative;
+  overflow: auto;
+}
+.box-banner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 84px;
+}
+.box-nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42px;
+}
+/*组件库*/
+.alert-mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 100;
+  opacity:0.4;                        /*背景的透明度:(Firefox适用；）*/
+  filter:alpha(opacity =40);          /*背景的透明度:(IE适用)；*/
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<context:property-placeholder
+		ignore-resource-not-found="true"
+		location="classpath*:META-INF/config/app*.properties,
+            								classpath*:META-INF/config/database.properties" />
+            								
+	<context:annotation-config />
+	<!-- 自动扫描 -->
+	
+	<context:component-scan base-package="com.asiainfo.svr.hackathon"
+		use-default-filters="false">
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Repository" />
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Component" />
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Service" />
+	</context:component-scan>
+
+	<!-- Druid 数据库源配置 -->
+	<bean id="masterDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass" value="${hibernate.driverClass}" />
+		<property name="jdbcUrl" value="${hibernate.jdbcUrl}"></property>
+		<property name="user" value="${hibernate.user}" />
+		<property name="password" value="${hibernate.password}" />
+
+		<property name="minPoolSize" value="${hibernate.minPoolSize}" />
+		<property name="maxPoolSize" value="${hibernate.maxPoolSize}" />
+		<property name="maxIdleTime" value="${hibernate.maxIdleTime}" />
+		<property name="acquireIncrement" value="${hibernate.acquireIncrement}" />
+		<property name="maxStatements" value="${hibernate.maxStatements}" />
+		<property name="initialPoolSize" value="${hibernate.initialPoolSize}" />
+		<property name="idleConnectionTestPeriod" value="${hibernate.idleConnectionTestPeriod}" />
+		<property name="acquireRetryAttempts" value="${hibernate.acquireRetryAttempts}" />
+		<property name="breakAfterAcquireFailure" value="${hibernate.breakAfterAcquireFailure}" />
+		<property name="testConnectionOnCheckout" value="${hibernate.testConnectionOnCheckout}" />
+	</bean>
+
+	<bean id="abstractSessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"
+		abstract="true">
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.jdbc.fetch_size">${hibernate.jdbc.fetch_size}</prop>
+				<prop key="hibernate.jdbc.batch_size">${hibernate.jdbc.batch_size}</prop>
+				<prop key="hibernate.max_fetch_depth">${hibernate.max_fetch_depth}</prop>
+				<prop key="hibernate.default_batch_fetch_size">${hibernate.default_batch_fetch_size}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+				<prop key="hibernate.use_sql_comments">${hibernate.use_sql_comments}</prop>
+				<prop key="hibernate.connection.autocommit">${hibernate.connection.autocommit}</prop>
+				<!-- 二级缓存和查询缓存不要关闭，永远用true -->
+				<prop key="hibernate.cache.use_second_level_cache">${hibernate.cache.use_second_level_cache}</prop>
+				<prop key="hibernate.cache.use_query_cache">${hibernate.cache.use_query_cache}</prop>
+				<!-- <prop key="hibernate.generate_statistics">${hibernate.generate_statistics}</prop> 
+					<prop key="hibernate.cache.use_structured_entries">${hibernate.cache.use_structured_entries}</prop> 
+					<prop key="hibernate.connection.release_mode">${hibernate.connection.release_mode}</prop> -->
+				<!-- <prop key="hibernate.order_updates">${hibernate.order_updates}</prop> -->
+				<!-- <prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext</prop> -->
+				<!--prop key="hibernate.cache.provider_class">com.u293.cache.redis.RedisCacheProvider</prop> 
+					<prop key="rediscache.masterRedisCacheFactory">com.u293.cache.redis.DefaultRedisCacheFactory</prop> 
+					<prop key="rediscache.slaveRedisCacheFactory">com.u293.cache.redis.DefaultRedisCacheFactory</prop> 
+					<prop key="rediscache.keyStrategy">com.u293.cache.redis.RedisHashCodeKeyStrategy</prop> 
+					<prop key="rediscache.master.server">${rediscache.master.server}</prop> <prop 
+					key="rediscache.slave.server">${rediscache.slave.server}</prop> <prop key="rediscache.expirationSeconds">${rediscache.expirationSeconds}</prop> 
+					<prop key="rediscache."></prop -->
+			</props>
+		</property>
+	</bean>
+
+	<bean id="sessionFactory" parent="abstractSessionFactory">
+		<property name="dataSource" ref="masterDataSource" />
+		<property name="packagesToScan">
+			<list>
+				<value>com.asiainfo.svr.hackathon.entity</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- ########################## 事务配置 开始 ########################## -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<aop:config>
+		<aop:pointcut id="pointcut"
+			expression="execution(* com.asiainfo.svr.hackathon.service..*.*(..))" />
+		<!-- 表达式含义： com.asiainfo.svr.hackathon.service包及其子包下，以Service为后缀名的类，的所有方法 -->
+
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut" />
+	</aop:config>
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="get*" read-only="true" /><!-- 单条记录 -->
+			<tx:method name="load*" read-only="true" /><!-- 单条记录 -->
+			<tx:method name="query*" read-only="true" /><!-- 集合 -->
+			<tx:method name="list*" read-only="true" /><!-- 集合 -->
+			<tx:method name="is*" read-only="true" />
+			<tx:method name="has*" read-only="true" />
+
+			<tx:method name="*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="do*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="add*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="save*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="delete*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="update*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="start*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="apply*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="check*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="send*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="bind*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="create*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="change*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+			<tx:method name="sync*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception,java.lang.RuntimeException" />
+		</tx:attributes>
+	</tx:advice>
+
+	<!-- ########################## 事务配置 结束 ########################## -->
+
+	<!-- 国际化（i18n）资源工具 -->
+	<!-- <bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="useCodeAsDefaultMessage" value="true" />
+		<property name="cacheSeconds" value="3600" />
+		<property name="basenames">
+			<list>
+				<value>META-INF/i18n/spider</value>
+			</list>
+		</property>
+		<property name="defaultEncoding" value="UTF-8" />
+	</bean>
+
+	<bean class="com.asiainfo.spider.util.MessageUtil" factory-method="getInstance">
+		<property name="messageSource" ref="messageSource" />
+	</bean> -->
+	
+	<bean id="appProperties" name="appProperties" class="com.asiainfo.svr.hackathon.model.AppProperties"/>
+
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+    	<property name="maxUploadSize" value="104857600" />
+        <property name="maxInMemorySize" value="4096" />
+	</bean>
+</beans>

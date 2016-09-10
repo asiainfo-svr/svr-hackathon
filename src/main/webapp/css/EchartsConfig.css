@@ -1,0 +1,149 @@
+body{
+	    background-image: linear-gradient(to right,#06152D,#071A35,#092044,#081A33);
+}
+#J_Demo{
+	position: relative;
+	height: calc(100% - 50px);
+}
+input{
+	font-family: "Microsoft Yahei";
+}
+.contenter{
+	overflow: hidden;
+	background-color: #1D1D3E;
+}
+.pz-center{
+	position: absolute;
+	top: 0;
+	left: 200px;
+	padding-top: 60px;
+	z-index: 9;
+}
+.addActive{
+    border: 1px dashed red;
+}
+.E_Type{
+	position: relative;
+}
+.E_Type>div{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0);
+}
+.F_menu{
+	position: relative;
+}
+.C_menu{
+	width: 143px;
+	max-height: 200px;
+	position: absolute;
+	top: 35px;
+	right: 0;
+	z-index: 99;
+	background: #fff;
+	border: 1px solid #EAEAEA;
+	cursor: pointer;
+	overflow-y:auto; 
+	display: none;
+}
+.C_menu li{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+	background: #F3F3F3;
+	border-bottom: 1px solid #E3E3E3;
+}
+.C_menu li:hover{
+	background: #E3E3E3;
+}
+.pz-left, .pz-right{
+	position: absolute;
+	top: 0;
+	z-index: 99;
+}
+.pz-left{
+	left: -194px;
+}
+.pz-right{
+	right:-294px;
+}
+.left-img,.right-img{
+	cursor: pointer;
+}
+/* #J_Demo .contenter{
+	height: calc(100% - 50px);
+} */
+#J_Demo .creat-back,
+#J_Demo .creat-sure{
+	margin-left: 10px;    
+	cursor: pointer;
+	background-color: #f1f1f1;
+	border: 2px solid #f1f1f1;
+}
+.pz-right .btn-group{
+	position: absolute;
+	left: -202px;
+	top: 0;
+	height: 59px;
+	line-height: 59px;
+	margin: 0;
+	padding-right: 15px;
+	/*background: #1D1D3E;*/
+}
+.pz-right .btn-group .btn{
+	display: inline-block;
+	margin-left: 25px;
+	padding: 0;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	background: transparent;
+	cursor: pointer;
+	color: #9ea7ab;
+}
+.pz-left .header-title{
+	position: absolute;
+	left: 200px;
+	top: 0;  
+	margin: 0;
+	padding: 0 15px; 
+	height: 59px;
+	line-height: 59px;
+	color: #9ea7ab;
+	/*background-color: #1D1D3E;*/
+}
+#E_add{
+	width: 75px;
+	height: 60px;
+    outline: 1px dashed #ccc;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+#E_add>img{
+	width: 100%;
+	height: 100%;
+}
+#E_add>div{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: move;
+}
+.header-fixed {
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	min-width: 1024px;
+	height: 59px;
+	z-index: 10;
+	background-color: #030B19;
+} 
