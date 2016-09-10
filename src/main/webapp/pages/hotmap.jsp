@@ -24,7 +24,7 @@
   <div class="par-banner clearfix">
     <div class="banner-box-left clearfix">
       <div class="par-div">
-        <img class="par-img" src="img/logo2.png"></div>
+        <a href="home"><img class="par-img w128" src="img/logo2.png"></a></div>
     </div>
     <div class="banner-box-right clearfix">
       <div class="par-div par-clock">
@@ -49,17 +49,6 @@
 <div class="box-nav" style="top: 84px;">
   <div class="par-nav">
     <div class="nav-box">
-      <div class="nav-home">
-        <div class="gradient-btn grad-nav">
-          <a type="button" class="btn btn-primary btn-lg" href="home"> <i class="iconfont icon-shouye"></i>
-          </a>
-          <div class="bg">
-            <div class="bg-left"></div>
-            <div class="bg-center"></div>
-            <div class="bg-right"></div>
-          </div>
-        </div>
-      </div>
       <ul class="nav-ul clearfix">
         <li>
           <div class="gradient-btn grad-nav grad-nav-cli">
@@ -176,10 +165,6 @@ $(function(){
 		}
 	]
 	fAreaData('.area',data);
-	fAutoWidth();
-	$(window).resize(function(){
-		fAutoWidth();
-	})
 })
 /**
  * [fHoverHtml description]
@@ -190,9 +175,12 @@ $(function(){
 function fAreaData(obj,data){
 	$(obj).mouseenter(function(){
 		var left = $(this).offset().left,
-			top  = $(this).offset().top,
-			html = $(this).html(),
-			i= $(this).index();
+			  top = $(this).offset().top,
+			  html = $(this).html(),
+        mapL = $('.map_alert').width(),
+        mapH = $('.map_alert').height(),
+        areaW = $(this).width(),
+			  i= $(this).index();
 		
 		for(var j=0;j<4;j++){
 			$('.alert_left').eq(j).html(data[i]['alertL'][j]);
@@ -201,8 +189,8 @@ function fAreaData(obj,data){
 		
 		$('.area_html').html(html);
 		$('.map_alert').css({
-			left:left-500,
-			top:top-191-$('.hotmap').offset().top,
+			left:left -mapL-$('.hotmap').offset().left+areaW/2,
+			top:top-mapH-$('.hotmap').offset().top+40,
 			display:'block'
 		});
 		$(obj).mouseleave(function(){
@@ -210,12 +198,6 @@ function fAreaData(obj,data){
 		})
 	})
 }
-var doc = document.documentElement;
-function fAutoWidth(){
-	var width = doc.clientWidth;
-	var zoom = width/1349;
-	zoom < 0.6 ? zoom = 0.6:0;
-	$('.hotmap').css({zoom:zoom})
-}
+
 </script>
 </html>

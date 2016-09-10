@@ -55,7 +55,7 @@ html {
     box-sizing: inherit;
 }
 
-/*清除浮动*/
+/*Ã¦Â¸â€¦Ã©â„¢Â¤Ã¦ÂµÂ®Ã¥Å Â¨*/
 
 .clearfix {
     *+height: 1%;
@@ -89,19 +89,19 @@ button {
     outline: none;
     border: none;
 }
+body{
+    min-width: 800px;
+    width: 100%
+}
 .wrap {
     width: 100%;
-    min-width: 1200px;
     height: auto;
     background-size: 100%;
 }
-.bg-star {
-    height: 100%;
-    background-image: url(../img/bg.png);
-    background-size: 100% 100%;
-}
+
 .main {
     width: 100%;
+    height: 100%;
     margin: auto;
 }
 .portrait {
@@ -181,40 +181,45 @@ button {
     background-image: url(../img/bg-index.jpg);
 }
 .nav {
+    zoom: 100%;
     width: 100%;
-    height: 85px;
-    padding-left: 20px;
-    padding-right: 20px;
-    line-height: 85px;
+    /* height: 115px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* line-height: 55px; */
     border-bottom: #68a0c1 1px solid;
 }
 .nav-logo {
-    float: left;
-    width: 353px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    vertical-align: middle;
+    /* float: left; */
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(-400deg,#EFAE37,#467397,#223B58);
+    padding-top: 9px;
+    padding-left: 30px;
+    /* padding-right: 20px; */
+    /* vertical-align: middle; */
 }
 .nav-logo img {
-    display: inline-block;
-    vertical-align: middle;
+    width: 140px;
 }
 .nav-link {
-    float: right;
-    width: calc(100% - 393px);
+    /* float: right; */
+    /* width: calc(100% - 295px); */
 }
 .nav-link {
-    font-size: 0;
-    text-align: right;
+    height: 50px;
+    /* font-size: 12px; */
+    text-align: center;
 }
 .nav-link a {
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 16px;
+    font-size: 12px;
+    height: 50px;
+    line-height: 50px;
     color: #fff;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 .bottom {
     padding: 40px;
@@ -236,38 +241,47 @@ button {
     margin-bottom: 10px;
 }
 .index-banner {
-    width: 100%;
+    width: 800px;
     height: 257px;
     background-image: url(../img/index-banner.png);
+    background-size: 16%;
     background-repeat: no-repeat;
-    background-position-x: 18%;
+    background-position-x: 13%;
+    background-position-y: 46px;
+    margin: auto;
+    border-bottom: 1px solid #36476B;
 }
 .index-banner > div {
     padding-left: 38%;
-    padding-top: 22px;
+    padding-right: 101px;
+    /* padding-top: 22px; */
 }
 .h1-header {
     width: 100%;
+    line-height: 80px;
     height: auto;
-    font-size: 40px;
-    text-align: left;
+    font-size: 32px;
+    text-align: center;
     color: #fff;
-    font-weight: lighter;
-    padding: 18px;
+    /* font-weight: bold; */
+    /* padding: 18px; */
 }
 .plain-text {
-    width: 100%;
+    /* width: 430px; */
     height: auto;
-    text-align: center;
+    text-align: left;
+    text-indent: 30px;
     color: #c6cad6;
     word-break: break-all;
     line-height: 25px;
+    font-size: 12px;
 }
 .index-banner .btn-wrap {
-    text-align: left;
+    /* text-align: left; */
 }
 .index-function {
     font-size: 0;
+    padding: 0 50px;
 }
 .index-function li {
     display: inline-block;
@@ -277,15 +291,12 @@ button {
     text-align: center;
     vertical-align: top;
 }
-ul.index-function.img-hover-wrap{
-    padding: 0 140px;
-}
 .index-function div {
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 110px;
     margin: auto;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 .index-function img {
     position: absolute;
@@ -294,19 +305,19 @@ ul.index-function.img-hover-wrap{
     right: 0;
     bottom: 0;
     margin: auto;
-    height: 100%;
+    height: 100px;
 }
 .h6-header {
     width: 100%;
     height: auto;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    font-size: 17px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    font-size: 14px;
     color: #62b4ff;
 }
 .index-function .plain-text {
     color: #2d70b6;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 23px;
 }
 .index-thermal {
@@ -316,29 +327,35 @@ ul.index-function.img-hover-wrap{
     background-size: 100%;
 }
 .padr300 {
-    padding-right: 300px;
+    /* padding-right: 300px; */
 }
 .btn {
     display: inline-block;
-    min-width: 170px;
-    height: 45px;
-    padding-left: 20px;
-    padding-right: 20px;
-    line-height: 45px;
+    min-width: 87px;
+    height: 31px;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 25px;
     vertical-align: middle;
     text-align: center;
     border-radius: 60px;
+    /* float: right; */
+    margin: auto;
+    background-color: rgba(16, 25, 54, 0.22);
+    border: 1px solid #B1822C;
+    color: #F3B037;
 }
 .btn-blue {
-    color: #fff;
-    background-color: #2678cc;
+    /* color: #fff; */
+    /* background-color: #2678cc; */
 }
 .padt160 {
     padding-top: 160px;
 }
 .box {
-    padding-top: 140px;
-    padding-bottom: 180px;
+    padding-top: 35px;
+    padding-bottom: 10px;
 }
 .padtb0 {
     padding-bottom: 0;
@@ -360,8 +377,9 @@ ul.index-function.img-hover-wrap{
 }
 .btn-wrap {
     width: 100%;
-    padding: 35px;
-    text-align: center;
+    padding-top: 13px;
+    /* padding: 35px; */
+    text-align: right;
 }
 .text-group {
     text-align: center;
@@ -423,9 +441,11 @@ ul.index-function.img-hover-wrap{
     padding-bottom: 50px;
 }
 .bg-heat-map {
+    zoom: 0.5922222222222;
     height: 753px;
     width: 1350px;
     background-image: url(../img/bg-heat-map.jpg);
+    margin: auto;
 }
 .heat-map{
     position: relative;
@@ -475,4 +495,7 @@ ul.index-function.img-hover-wrap{
 }
 .portrait-click{
     background-image: url(../img/portrait-click.png);
+}
+.nav-link a:hover{
+    color: #FFBB3C;
 }

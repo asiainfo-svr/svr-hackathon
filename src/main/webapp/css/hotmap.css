@@ -1,6 +1,5 @@
 body{
-	background: #03060F;
-	min-width: 1024px;
+	background: #010812 !important;
 }
 .hotmap,.hotmap1{
 	width: 1280px;
@@ -9,6 +8,8 @@ body{
 	position: relative;
 }
 .hotmap{
+	margin: auto;
+	zoom:0.64;
 	background: url(../img/011.jpg) no-repeat;
 }
 .hotmap .area{
@@ -28,7 +29,7 @@ body{
 }
 .area>img{
 	width: 100%;
-	height: 100%;
+	
 }
 .area1{
 	top: 460px;

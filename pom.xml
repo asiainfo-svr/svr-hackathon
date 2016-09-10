@@ -49,8 +49,6 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
-		<!-- <dependency> <groupId>org.springframework.data</groupId> <artifactId>spring-data-jpa</artifactId> 
-			<version>${spring.version}</version> </dependency> -->
 
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -70,12 +68,6 @@
 			<version>${c3p0.version}</version>
 		</dependency>
 
-		<!-- <dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>${hibernate.version}</version>
-		</dependency> -->
-
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
@@ -83,10 +75,6 @@
 		</dependency>
 
 		<!-- hibernate end -->
-
-		<!-- AspectJ -->
-		<!-- <dependency> <groupId>org.aspectj</groupId> <artifactId>aspectjrt</artifactId> 
-			<version>${org.aspectj-version}</version> </dependency> -->
 
 		<!-- Logging -->
 		<dependency>
@@ -129,9 +117,6 @@
 			</exclusions>
 		</dependency>
 
-		<!-- @Inject -->
-		<!-- <dependency> <groupId>javax.inject</groupId> <artifactId>javax.inject</artifactId> 
-			<version>1</version> </dependency> -->
 		<!-- mysql -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -190,18 +175,6 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>${aspectj.version}</version>
 		</dependency>
-		<!-- zxing start -->
-		<dependency>
-			<groupId>com.google.zxing</groupId>
-			<artifactId>core</artifactId>
-			<version>${zxing.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.zxing</groupId>
-			<artifactId>javase</artifactId>
-			<version>${zxing.version}</version>
-		</dependency>
-		<!-- zxing end -->
 		<!-- jackson start -->
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
@@ -219,17 +192,7 @@
 			<artifactId>java-uuid-generator</artifactId>
 			<version>${uuid.version}</version>
 		</dependency>
-		<!-- <dependency>
-			<groupId>com.qiniu</groupId>
-			<artifactId>qiniu-java-sdk</artifactId>
-			<version>${qiniu.version}</version>
-		</dependency> -->
 		
-		<dependency>
-			<groupId>redis.clients</groupId>
-			<artifactId>jedis</artifactId>
-			<version>${jedis.version}</version>
-		</dependency>
 
 		<!-- Test -->
 		<dependency>

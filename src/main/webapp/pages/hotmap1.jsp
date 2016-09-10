@@ -10,8 +10,6 @@
 <html>
 <head>
 	<base href="<%=basePath%>" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>车辆销售额对比图</title>
 	<link rel="shortcut icon" href="img/small-logo.png">
 	<link rel="stylesheet" href="css/style.css">
 	 <link rel="stylesheet" href="fonts/iconfont.css">
@@ -24,12 +22,12 @@
   <div class="par-banner clearfix">
     <div class="banner-box-left clearfix">
       <div class="par-div">
-        <img class="par-img" src="img/logo2.png"></div>
+        <a href="home"><img class="par-img w128" src="img/logo2.png"></a></div>
     </div>
     <div class="banner-box-right clearfix">
       <div class="par-div par-clock">
-        <div class="par-item detailTime">23:32</div>
-        <div class="par-item detailDay">2016年9月9日</div>
+        <div class="par-item detailTime"></div>
+        <div class="par-item detailDay"></div>
         <div class="par-bg">
           <div class="par-bg-left"></div>
           <div class="par-bg-center"></div>
@@ -49,17 +47,6 @@
 <div class="box-nav" style="top: 84px;">
   <div class="par-nav">
     <div class="nav-box">
-      <div class="nav-home">
-        <div class="gradient-btn grad-nav">
-          <a type="button" class="btn btn-primary btn-lg" href="home"> <i class="iconfont icon-shouye"></i>
-          </a>
-          <div class="bg">
-            <div class="bg-left"></div>
-            <div class="bg-center"></div>
-            <div class="bg-right"></div>
-          </div>
-        </div>
-      </div>
       <ul class="nav-ul clearfix">
         <li>
           <div class="gradient-btn grad-nav">
@@ -219,7 +206,7 @@ function fAreaDataAndBg(obj,data){
 		}
 		$('.area_html').html(html);
 		$('.alert_parent').css({
-			left:left-$('.alert_parent').width()+width/2-12,
+			left:left-$('.alert_parent').width()-$('.alert_parent').offset().left+width/2-12,
 			top:top-$('.alert_parent').height()-$('.hotmap1').offset().top,
 			display:'block'
 		});

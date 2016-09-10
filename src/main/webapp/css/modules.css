@@ -2,14 +2,14 @@ body{
       background-image: linear-gradient(to right,#06152D,#071A35,#092044,#081A33);
 }
 .wrap-bg{    
-	position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   min-width: 1024px;
   min-height: 600px;
-	background-image: url("../img/bg.png");
+  background-image: url("../img/bg.png");
   background-size: 100% 100%;
   z-index: -1;
 }
@@ -28,14 +28,14 @@ body{
 
 /*下拉框列表*/
 .virtual-div2{ /*模拟外层div*/
-	width: 800px;
-	height: auto;
-	background: #030B16;
+  width: 800px;
+  height: auto;
+  background: #030B16;
 }
 .par-select{
-	width: 100%;
-	height: auto;
-	/*padding:20px;*/
+  width: 100%;
+  height: auto;
+  /*padding:20px;*/
 }
 .choose-per-box-another{
   float: left;
@@ -46,40 +46,40 @@ body{
   position: relative;
 }
 .par-choose{
-	float: left;
+  float: left;
   padding-right: 110px;
-	/*margin-right: 40px;*/
+  /*margin-right: 40px;*/
 }
 .par-choose input{
-	width: 100%;
-	height: 30px;
-	line-height: 28px;
-	padding: 0 25px 0px 10px;
+  width: 100%;
+  height: 30px;
+  line-height: 28px;
+  padding: 0 25px 0px 10px;
   background: none;
   color: #fff;
-	cursor: pointer;
+  cursor: pointer;
   border:1px solid #287eb5;
 }
 .choose-list{
-	width: 100%;
-	height: auto;
-	background:#061E34;
-	border: 1px solid #287eb5;
-	position: absolute;
-	top: 30px;
-	left: 0px;
-	display: none;
-	z-index: 20;
+  width: 100%;
+  height: auto;
+  background:#061E34;
+  border: 1px solid #287eb5;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  display: none;
+  z-index: 20;
 }
 .choose-list >li{
-	width: 100%;
-	height: auto;
-	line-height: 30px;
-	padding: 0px 15px;
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  padding: 0px 15px;
   font-size: 12px;
 }
 .choose-list >li:hover{
-	background:#1C3E5B;
+  background:#1C3E5B;
 }
 .drop-down-box{
   width: 180px;
@@ -103,30 +103,30 @@ body{
 }
 
 /*.btn{
-	width: 80px;
-	height: 35px;
-	color: #fff;
-	background:#ccc;
-	border-radius: 5px;
-	font-size: 15px;
+  width: 80px;
+  height: 35px;
+  color: #fff;
+  background:#ccc;
+  border-radius: 5px;
+  font-size: 15px;
 }
 .btn >i{
-	vertical-align: bottom;
-	margin-right: 5px;
+  vertical-align: bottom;
+  margin-right: 5px;
 }
 .btn:hover{
-	background: #e2e2e2;
+  background: #e2e2e2;
 }*/
 
 /*弹窗组件*/
 .virtual-div3{
-	width: 100%;
-	height:100%;
+  width: 100%;
+  height:100%;
 }
 .par-form{
-	/*width: 500px;*/
+  /*width: 500px;*/
   width: 600px;
-	height: auto;
+  height: auto;
   /*max-height: 540px;
   min-height: 210px;*/
   color: #fff;
@@ -145,8 +145,8 @@ body{
 .form-header,
 .form-sectiom,
 .form-footer{
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
   position: relative;
   z-index: 2;
 }
@@ -160,18 +160,18 @@ body{
     z-index: 2;
 }
 .par-alert-title{
-	height: 50px;
-	line-height: 50px;
-	font-size: 16px;
-	padding: 0px 20px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  padding: 0px 20px;
   border-bottom: 1px solid #246b9e;
   font-weight: bold;
   border-top: 0px;
 }
 .form-box{
-	width: 100%;
-	height: auto;
-	/*padding: 15px;*/
+  width: 100%;
+  height: auto;
+  /*padding: 15px;*/
 }
 .form-section{
   position: relative;
@@ -181,51 +181,51 @@ body{
   height:400px;
 }
 .form-box >.form-div{
-	width: 100%;
-	height: auto;
-	/*padding: 10px;*/
+  width: 100%;
+  height: auto;
+  /*padding: 10px;*/
   padding: 5px 0;
 }
 .form-text{
   float: left;
-	width: 30%;
-	height: 30px;
-	line-height: 30px;
-	padding: 0px 5px;
+  width: 30%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0px 5px;
 }
 .choose-label{
-	display: block;
-	text-align: right;
+  display: block;
+  text-align: right;
 }
 .form-choose{
-	width: 70%;
-/*	float: right;
+  width: 70%;
+/*  float: right;
     margin-right: 0px;
     margin-top: -35px;*/
 }
 .form-choose .choose-input{
-	width: 100%;
-	height: 30px;
+  width: 100%;
+  height: 30px;
   line-height: 28px;
-	border: 1px solid #287eb5;
+  border: 1px solid #287eb5;
 }
 .choose-per{
-	width: 100%;
-	height: auto;
-	float: left;
-	position: relative;
+  width: 100%;
+  height: auto;
+  float: left;
+  position: relative;
 }
 .choose-per >i{
-	position: absolute;
-	right: 10px;
-	top: 8px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
   font-size: 13px;
 }
 .choose-per-another{
-	width: 50%;
+  width: 50%;
 }
 .form-choose .choose-per:last-child{
-	padding-left: 10px;
+  padding-left: 10px;
 }
 .par-notice{
   width: 100%;
@@ -237,37 +237,37 @@ body{
   word-wrap: break-word;
 }
 /*.btn-item{
-	width: 250px;
-	height: auto;
-	margin: 20px auto;
+  width: 250px;
+  height: auto;
+  margin: 20px auto;
 }
 .btn-item .btn{
-	width: 100px;
-	height: 40px;
-	font-size: 18px;
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
 }
 .btn-item .btn:first-child{
-	margin-right: 45px;
-	background:#e2e2e2;
+  margin-right: 45px;
+  background:#e2e2e2;
 }
 .btn-item .btn:first-child:hover{
-	background:#ccc;
+  background:#ccc;
 }
 .btn-item .btn:last-child{
-	background:#ccc;
+  background:#ccc;
 }
 .btn-item .btn:last-child:hover{
-	background:#e2e2e2;
+  background:#e2e2e2;
 }*/
 .behind-show,
 .behind-show-list{
   width: 33.33333%;
 }
 .virtual-div4{ /*虚拟div*/
-	padding: 20px;
-	width: 100%;
-	height: 300px;
-	background-color: #1A4F91;
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+  background-color: #1A4F91;
 }
 /*弹窗背景*/
 .bg-row{
@@ -307,14 +307,14 @@ body{
     border: 1px solid transparent;
 }
 .par-card-pad{
-	padding: 20px 15px;
+  padding: 20px 15px;
 }
 .card-header {
     width: 100%;
     height: auto;
 }
 .card-header-h{
-	  position: relative;
+    position: relative;
     z-index: 1;
     width: 100%;
     height: auto;
@@ -358,9 +358,9 @@ body{
 .card-num {
   width: 100%;
   height: auto;
-	padding: 1px;
-	margin-top: 20px;
-	text-align: center;
+  padding: 1px;
+  margin-top: 20px;
+  text-align: center;
 }
 .card-num-time {
     padding-top: 9px;
@@ -368,7 +368,7 @@ body{
     text-align: center;
 }
 .card-num-time > div {
-	padding: 4px 10px 7px;
+  padding: 4px 10px 7px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -392,7 +392,7 @@ body{
 .card-text-only {
     width: 100%;
     height: auto;
-    min-height: 50px;	
+    min-height: 50px; 
     padding: 20px 10px 23px;
     text-align: center;
     font-size: 20px;
@@ -408,9 +408,9 @@ body{
     vertical-align: middle;
 }
 .padr5{
-	padding-right: 5px;
+  padding-right: 5px;
 }.padl5{
-	padding-left: 5px;
+  padding-left: 5px;
 }
 .card-text-big {
     font-size: 16px;
@@ -421,7 +421,7 @@ body{
     line-height: 30px;
 }
 .mart17{
-	margin-top: 17px;
+  margin-top: 17px;
 }
 /*--背景--*/
 
@@ -658,7 +658,7 @@ body{
     font-size: 0;
 }
 .table-toolist .table-tool ,.table-toolist .table-data{
-	display: none;
+  display: none;
 }
 .table-toolist > div {
     display: inline-block;
@@ -706,10 +706,10 @@ body{
 .table td,
 .table th {
     position: relative;
-	min-width: 50px;
+  min-width: 50px;
     padding: 5px;
     line-height: 1.42857;
-	word-break: break-all;
+  word-break: break-all;
 }
 .table-highlighted tr:hover {
     background-color: #bebdbd;
@@ -862,7 +862,7 @@ body{
     vertical-align: top;
 }
 .table-center th,.table-center td{
-	min-width: 50px;
+  min-width: 50px;
     vertical-align: middle;
 }
 .table-bottom th,.table-bottom td{
@@ -873,31 +873,31 @@ body{
     width: 50px;
 }
 .par-check,.par-check-all{
-	display: inline-block;
-	width: 12px;
-	height: 12px;
-	border: rgba(132,230,254,.6) 1px solid;
-	text-align: center;
-	line-height: 9px;
-	vertical-align: middle;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: rgba(132,230,254,.6) 1px solid;
+  text-align: center;
+  line-height: 9px;
+  vertical-align: middle;
 }
 .par-check i,.par-check-all i{
-	display: none;
-	font-size: 11px;
-	color: rgba(132,230,254,.6);
+  display: none;
+  font-size: 11px;
+  color: rgba(132,230,254,.6);
 }
 .par-check-checked{
-	border: #84e6fe 1px solid;
+  border: #84e6fe 1px solid;
 }
 .par-check-checked i{
-	display: block;
-	color: #84e6fe;
+  display: block;
+  color: #84e6fe;
 }
 .table-tool-show .table-toolist{
-	display: block
+  display: block
 }
 .table-tool-show .table-tool{
-	display: inline-block;
+  display: inline-block;
 }
 /*六边形组件*/
 
@@ -1019,7 +1019,7 @@ body{
 }
 .btn-lg{
     padding: 0 22px;
-    height: 40px;
+    height: 35px;
     line-height: 38px;
     font-size: 16px;
 }
@@ -1126,7 +1126,7 @@ body{
 }
 /*导航类 鼠标滑过按钮样式*/
 .grad-nav .btn{
-    font-size: 14px;
+    font-size: 12px;
 }
 .grad-nav-hover >.bg{
     padding: 0 1px 0 117px;

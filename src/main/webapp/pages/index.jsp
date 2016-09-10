@@ -18,11 +18,11 @@
 </head>
 
 <body>
-    <div class="wrap bg-index">
+    <div class="wrap bg-index" style="min-height:100%">
         <div class="main">
             <div class="nav">
                 <div class="nav-logo">
-                    <img src="img/logo.png" alt="">
+                    <a href="home"><img src="img/logo.png" alt=""></a>
                 </div>
                 <div class="nav-link">
                     <a href="view/hotmap">汽车消费潜力图</a>
@@ -39,7 +39,7 @@
                         <p class="plain-text padr300">随着IT化建设的快速发展，智能应用使用的普及，各个行业、系统积累的数据越来越丰富，这些数据的应用也越来越为人们重视。通过对用户APP使用信息、搜索信息、位置信息、个人资料的综合分析，可以为商品销售提供更有力的支撑。
                         </p>
                         <div class="btn-wrap">
-                            <button class="btn btn-blue">快速加入</button>
+                           
                         </div>
                     </div>
                 </div>
@@ -75,65 +75,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="box padtb0">
-                <div class="index-thermal">
-                    <div>
-                        <h2 class="h2-header">这里是文字介绍</h2>
-                        <div class="text-group">
-                            <p>ssssssssssssssssbbbbbsssss</p>
-                            <p>ssssfsssssssssssssssssssssssssssssssssssssssssssssssssss</p>
-                            <p>sssssssssssssssssssss</p>
-                            <p>sssssssssssssssssssss</p>
-                            <p>fffffffffhhhhhhhhhhhhh</p>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn btn-blue">快速加入</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <div class="index-car">
-                    <div class="img-hover-wrap">
-                        <div class="index-intro index-intro-posi1">
-                            <div class="img-hover" data-img="index-intro-1">
-                                <img src="img/index-intro-1.png" alt="">
-                            </div>
-                            <h4 class="h4-header">文字介绍</h4>
-                        </div>
-                        <div class="index-intro index-intro-posi2">
-                            <div class="img-hover" data-img="index-intro-2">
-                                <img src="img/index-intro-2.png" alt="">
-                            </div>
-                            <h4 class="h4-header">文字介绍</h4>
-                        </div>
-                        <div class="index-intro index-intro-posi3">
-                            <div class="img-hover" data-img="index-intro-3">
-                                <img src="img/index-intro-3.png" alt="">
-                            </div>
-                            <h4 class="h4-header">文字介绍</h4>
-                        </div>
-                        <div class="index-intro index-intro-posi4">
-                            <div class="img-hover" data-img="index-intro-4">
-                                <img src="img/index-intro-4.png" alt="">
-                            </div>
-                            <h4 class="h4-header">文字介绍</h4>
-                        </div>
-                        <div class="index-intro index-intro-posi5">
-                            <div class="img-hover" data-img="index-intro-5">
-                                <img src="img/index-intro-5.png" alt="">
-                            </div>
-                            <h4 class="h4-header">文字介绍</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom">
-                <div>
-                    <p>版权所有：上海亚信科技 全国统一热线：400-161-1808 电话：0755-61881808 传真：0755-61881868</p>
-                    <p>公司地址：上海市徐汇区虹漕路416号56号楼2楼 邮箱：service@qm-cn.com 备案：呜呜呜呜呜</p>
-                </div>
-            </div>
+            
+           
         </div>
     </div>
     <script>
