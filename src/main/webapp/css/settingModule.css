@@ -440,7 +440,7 @@ h6 {
 .par-banner{
 	/* width: 800px; */
 	overflow: hidden;
-	padding: 17px 0;
+	padding: 13px 0;
 	height: 54px;
 	/* min-width: 1165px; */
 	background-image: linear-gradient(to right,#06152D,#071A35,#092044,#081A33);
@@ -458,6 +458,9 @@ h6 {
 }
 .par-div{
 	float: left;
+}
+.par-div .par-img{
+	height: 26px !important
 }
 .banner-box-left >.par-div{
   padding: 0px 25px;
@@ -479,7 +482,7 @@ h6 {
 }
 .par-clock{
 	position: relative;
-	width: 90px;
+	width: 150px;
 	height: 100%;
 }
 .par-clock .par-item{
@@ -562,8 +565,4 @@ h6 {
 }
 .nav-home >.grad-nav:hover >.bg{
 	display: none;
-}
-
-.w128 {
-	width : 128px;
 }

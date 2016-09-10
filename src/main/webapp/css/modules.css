@@ -1069,7 +1069,7 @@ body{
     z-index: 1;
 }
 .gradient-btn >.btn-lg{
-    line-height: 36px;
+    line-height: 31px;
 }
 .gradient-btn >.btn-sm{
     line-height: 26px;
@@ -1126,7 +1126,7 @@ body{
 }
 /*导航类 鼠标滑过按钮样式*/
 .grad-nav .btn{
-    font-size: 12px;
+    font-size: 15px;
 }
 .grad-nav-hover >.bg{
     padding: 0 1px 0 117px;

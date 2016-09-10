@@ -10,6 +10,8 @@
 <html>
 <head>
 	<base href="<%=basePath%>" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>车辆销售额对比图</title>
 	<link rel="shortcut icon" href="img/small-logo.png">
 	<link rel="stylesheet" href="css/style.css">
 	 <link rel="stylesheet" href="fonts/iconfont.css">
@@ -21,8 +23,8 @@
  <div class="box-banner">
   <div class="par-banner clearfix">
     <div class="banner-box-left clearfix">
-      <div class="par-div">
-        <a href="home"><img class="par-img w128" src="img/logo2.png"></a></div>
+       <div class="par-div">
+      <a href="home"><img class="par-img w128" src="img/logo2.png"></a></div>
     </div>
     <div class="banner-box-right clearfix">
       <div class="par-div par-clock">
@@ -178,10 +180,7 @@ $(function(){
 	    		}
 	    	];
 	fAreaDataAndBg('.area',data);
-	fAutoWidth();
-	$(window).resize(function(){
-		fAutoWidth();
-	});
+
 });
 /**
  * [fAreaDataAndBg description]
@@ -206,7 +205,7 @@ function fAreaDataAndBg(obj,data){
 		}
 		$('.area_html').html(html);
 		$('.alert_parent').css({
-			left:left-$('.alert_parent').width()-$('.alert_parent').offset().left+width/2-12,
+			left:left-$('.alert_parent').width()-$('.hotmap1').offset().left+width/2-12,
 			top:top-$('.alert_parent').height()-$('.hotmap1').offset().top,
 			display:'block'
 		});
@@ -216,12 +215,6 @@ function fAreaDataAndBg(obj,data){
 		})
 	})
 }
-var doc = document.documentElement;
-function fAutoWidth(){
-	var width = doc.clientWidth;
-	var zoom = width/1349;
-	zoom < 0.6 ? zoom = 0.6:0;
-	$('.hotmap1').css({zoom:zoom})
-}
+
 </script>
 </html>

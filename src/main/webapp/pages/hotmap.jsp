@@ -23,8 +23,8 @@
  <div class="box-banner">
   <div class="par-banner clearfix">
     <div class="banner-box-left clearfix">
-      <div class="par-div">
-        <a href="home"><img class="par-img w128" src="img/logo2.png"></a></div>
+       <div class="par-div">
+      <a href="home"><img class="par-img w128" src="img/logo2.png"></a></div>
     </div>
     <div class="banner-box-right clearfix">
       <div class="par-div par-clock">
