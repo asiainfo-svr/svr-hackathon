@@ -12,6 +12,7 @@
 	<base href="<%=basePath%>" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>热区人群画像</title>
+    <link rel="shortcut icon" href="img/small-logo.png">
     <link rel="stylesheet" href="css/mystyle.css">
       <link rel="stylesheet" href="fonts/iconfont.css">
       <link rel="stylesheet" href="css/settingModule.css">
@@ -64,7 +65,7 @@
       <ul class="nav-ul clearfix">
         <li>
           <div class="gradient-btn grad-nav">
-            <a type="button" class="btn btn-primary btn-lg" href="view/hotmap">车辆销量热力图</a>
+            <a type="button" class="btn btn-primary btn-lg" href="view/hotmap">汽车消费潜力图</a>
             <div class="bg">
               <div class="bg-left"></div>
               <div class="bg-center"></div>
@@ -74,7 +75,7 @@
         </li>
         <li>
           <div class="gradient-btn grad-nav">
-            <a type="button" class="btn btn-primary btn-lg" href="view/hotmap1">车辆销售额对比图</a>
+            <a type="button" class="btn btn-primary btn-lg" href="view/hotmap1">汽车销量对比图</a>
             <div class="bg">
               <div class="bg-left"></div>
               <div class="bg-center"></div>
@@ -84,7 +85,7 @@
         </li>
         <li>
           <div class="gradient-btn grad-nav grad-nav-cli">
-            <a type="button" class="btn btn-primary btn-lg" href="view/person">热区人群画像</a>
+            <a type="button" class="btn btn-primary btn-lg" href="view/person">潜在消费人群画像</a>
             <div class="bg">
               <div class="bg-left"></div>
               <div class="bg-center"></div>
@@ -94,7 +95,7 @@
         </li>
         <li>
           <div class="gradient-btn grad-nav">
-            <a type="button" class="btn btn-primary btn-lg" href="view/showEnd">热区消费偏好</a>
+            <a type="button" class="btn btn-primary btn-lg" href="view/showEnd">奢侈品购买渠道分析</a>
             <div class="bg">
               <div class="bg-left"></div>
               <div class="bg-center"></div>
@@ -104,7 +105,7 @@
         </li>
         <li>
           <div class="gradient-btn grad-nav">
-            <a type="button" class="btn btn-primary btn-lg" href="view/luxuryGoods">奢侈品销售分析</a>
+            <a type="button" class="btn btn-primary btn-lg" href="view/luxuryGoods">奢侈品销售偏好分析</a>
             <div class="bg">
               <div class="bg-left"></div>
               <div class="bg-center"></div>

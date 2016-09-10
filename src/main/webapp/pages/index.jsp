@@ -12,6 +12,7 @@
 	<base href="<%=basePath%>" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>首页</title>
+	<link rel="shortcut icon" href="img/small-logo.png">
     <link rel="stylesheet" href="css/mystyle.css">
     <script src="js/jquery-1.10.2.min.js"></script>
 </head>
@@ -24,18 +25,18 @@
                     <img src="img/logo.png" alt="">
                 </div>
                 <div class="nav-link">
-                    <a href="view/hotmap">车辆销售热力图</a>
-                    <a href="view/hotmap1">车辆销售额对比图</a>
-                    <a href="view/person">热区人群画像</a>
-                    <a href="view/showEnd">热区消费偏好</a>
-                    <a href="view/luxuryGoods">奢侈品销售分析</a>
+                    <a href="view/hotmap">汽车消费潜力图</a>
+                    <a href="view/hotmap1">汽车销量对比图</a>
+                    <a href="view/person">潜在消费人群画像</a>
+                    <a href="view/showEnd">奢侈品购买渠道分析</a>
+                    <a href="view/luxuryGoods">奢侈品销售偏好分析</a>
                 </div>
             </div>
             <div class="box padt160">
                 <div class="index-banner">
                     <div>
-                        <h1 class="h1-header">这里是标题</h1>
-                        <p class="plain-text padr300"> qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+                        <h1 class="h1-header">数据引领未来生活</h1>
+                        <p class="plain-text padr300">随着IT化建设的快速发展，智能应用使用的普及，各个行业、系统积累的数据越来越丰富，这些数据的应用也越来越为人们重视。通过对用户APP使用信息、搜索信息、位置信息、个人资料的综合分析，可以为商品销售提供更有力的支撑。
                         </p>
                         <div class="btn-wrap">
                             <button class="btn btn-blue">快速加入</button>
@@ -49,28 +50,27 @@
                         <div class="img-hover" data-img="index-function-1">
                             <img src="img/index-function-1.png" alt="">
                         </div>
-                        <h6 class="h6-header">功能文字</h6>
+                        <h6 class="h6-header">实时分析</h6>
                         <p class="plain-text">
-                            hfhfhfhfhffhfhfhfhfhfhfhf hfhfhfhfhffhfhfhfhfhfhfhf hfhfhfhfhffhfhfhfhfhfhfhf hfhfhfhfhffhfhfhfhfhfhfhf hfhfhfhfhffhfhfhfhfhfhfhf
-
+                            基于海量数据进行深度学习，实时分析，进而产生有价值的分析数据
                         </p>
                     </li>
                     <li>
                         <div class="img-hover" data-img="index-function-2">
                             <img src="img/index-function-2.png" alt="">
                         </div>
-                        <h6 class="h6-header">功能文字</h6>
+                        <h6 class="h6-header">人群画像</h6>
                         <p class="plain-text">
-                            hfhfhfhfhffhfhfhfhfhfhfhf
+                            对汽车或奢侈品销售的潜在消费人群进行精准画像
                         </p>
                     </li>
                     <li>
                         <div class="img-hover" data-img="index-function-3">
                             <img src="img/index-function-3.png" alt="">
                         </div>
-                        <h6 class="h6-header">功能文字</h6>
+                        <h6 class="h6-header">渠道分布</h6>
                         <p class="plain-text">
-                            hfhfhfhfhffhfhfhfhfhfhfhf
+                            对销售渠道的分布情况进行分析展示
                         </p>
                     </li>
                 </ul>

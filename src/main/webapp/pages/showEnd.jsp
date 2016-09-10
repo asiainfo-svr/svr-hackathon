@@ -12,6 +12,7 @@
 	<base href="<%=basePath%>" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>热区消费偏好</title>
+  <link rel="shortcut icon" href="img/small-logo.png">
   <link rel="stylesheet" href="css/daping.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fonts/iconfont.css">
